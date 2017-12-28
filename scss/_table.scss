@@ -3,9 +3,32 @@ table,
 
 
     width: 100%;
-    background: $grey-50;
+    background: $white;
+    border-collapse:collapse;
+    text-align: justify;
 
     tr, .tr {
         padding: 10px;
     }
+
+    td, th {
+        padding:.75rem;
+        vertical-align:top;
+        border-top:1px solid #dee2e6;
+    }
+
+    tbody{border-top:2px solid #dee2e6}
+
+    .table-bordered{
+        border:1px solid #dee2e6;
+
+        td, th {
+            border:1px solid #dee2e6;
+        }
+    }
+
+    .table-striped tr:nth-of-type(odd){background-color:rgba(0,0,0,.05)}
+
+    .table-hover tr:hover{background-color:rgba(0,0,0,.075)}
 }
+
