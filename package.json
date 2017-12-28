@@ -1,0 +1,24 @@
+{
+  "name": "gabui",
+  "version": "0.1.0",
+  "description": "a minimalist css framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateusGabi/GabUI.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "front-end"
+  ],
+  "author": "Mateus Gabi Moreira <mateusgabimoreira@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MateusGabi/GabUI/issues"
+  },
+  "homepage": "https://github.com/MateusGabi/GabUI#readme"
+}
