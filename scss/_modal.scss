@@ -1,0 +1,34 @@
+.ModalWrapper {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+
+    animation: modal 1 1s linear;
+
+    & > .Modal {
+        background: $white;
+        padding: 50px;
+        width: 80vw;
+        max-width: 500px;
+    }
+
+    .Fechar {
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: -20px;
+        right: -10px;
+    }
+
+    .Rodape {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

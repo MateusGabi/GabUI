@@ -1,0 +1,34 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-title;
+    margin-bottom: 30px;
+}
+
+.text-ghost {
+    color: rgba($color: #000000, $alpha: 0.1);
+}
+
+.text-primary {
+    color: $primary-color;
+}
+
+.text-danger {
+    color: $danger-color;
+}
+
+.text-warning {
+    color: $warning-color;
+}
+
+.text-success {
+    color: $success-color;
+}
+
+
+.text-center {
+    text-align: center;
+}

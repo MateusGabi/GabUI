@@ -1,0 +1,25 @@
+.grid {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  padding: $grid-padding;
+  margin: $grid-margin;
+}
+
+@for $i from 1 through $grids {
+  .grid--#{$i} {
+    @extend .grid-block;
+    $valor_base : ($container-width / $grids);
+    $valor_base : $valor_base * $i;
+    width: $valor_base;
+  }
+}

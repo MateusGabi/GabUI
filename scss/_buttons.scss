@@ -1,0 +1,61 @@
+button,
+.button {
+
+    border: $buttons-border;
+    border-radius: $buttons-border-radius;
+    font-family: $font-text;
+    padding: $buttons-padding;
+    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    & > i {
+        padding-right: 1em;
+    }  
+
+}
+
+.button-default {
+    background: $default-color;
+    color: $font-color;
+}
+
+.button-primary {
+    background: $primary-color;
+    color: $white;
+}
+
+.button-warning {
+    background: $warning-color;
+    color: $white;
+}
+
+.button-danger {
+    background: $danger-color;
+    color: $white;
+}
+
+.button-success {
+    background: $success-color;
+    color: $white;
+}
+
+.button-google {
+    background: $google-color;
+    color: $white;
+}
+
+.fab {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 30px 30px 26px 26px;
+    position: fixed;
+    right: 15vh;
+    bottom: 7vw;
+
+    & > i {
+        padding: 0em;
+    }  
+}

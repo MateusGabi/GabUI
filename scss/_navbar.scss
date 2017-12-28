@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    align-items: center;
+
+
+    width: 100vw;
+    height: 70px;
+
+    color: $navbar-font-color;
+
+    background: $navbar-background;
+
+    margin-bottom: 30px;
+
+
+    & > .container {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    a {
+        padding: 1em;
+
+
+        & > i {
+
+            padding-right: 0.5em;
+
+        }
+    }
+
+    h1 {
+        margin: 0px;
+    }
+
+}

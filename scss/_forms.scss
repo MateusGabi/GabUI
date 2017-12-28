@@ -1,0 +1,31 @@
+form,
+.form
+
+{
+
+    
+    margin-bottom: 30px;
+
+    input,
+    .input,
+    select,
+    .select,
+    option,
+    .option
+    {
+        background: $form-input-background;
+        border: $form-input-border;
+        border-radius: $form-input-border-radius;
+        padding: $form-input-padding;
+        font-family: $font-text;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+            margin: 10px 0;
+        }
+    }
+}

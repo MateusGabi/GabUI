@@ -1,0 +1,19 @@
+//
+// login page
+.LoginPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+//
+// Loading
+.LoadingPage {
+    @extend .LoginPage;
+
+    & > i {
+        animation: spin infinite 2s linear;
+    }
+}

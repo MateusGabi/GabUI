@@ -1,0 +1,49 @@
+//
+// colors
+$default-color: $grey-100;
+$primary-color: $grey-800;
+$warning-color: $orange;
+$danger-color: $red;
+$success-color: $green;
+
+$google-color: $red-700;
+
+
+//
+// fonts
+$font-text: 'Karla', Arial, Helvetica, sans-serif; 
+$font-title: $font-text;
+$font-color: $grey-900;
+$font-size: 120%;
+
+//
+// core
+$background-page: $blue-grey-50;
+
+//
+// buttons
+$buttons-border: 0px;
+$buttons-border-radius: 5px;
+$buttons-padding: 1em;
+
+//
+// container
+$container-width: 1200px;
+
+//
+// grid
+$grids: 5;
+$grid-padding: 0px;
+$grid-margin: 0px;
+
+//
+// navbar
+$navbar-font-color: $white;
+$navbar-background: $primary-color;
+
+//
+// Forms
+$form-input-background: $grey-100;
+$form-input-border: 0px solid $primary-color;
+$form-input-border-radius: 5px;
+$form-input-padding: 10px 15px;

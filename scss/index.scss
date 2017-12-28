@@ -1,0 +1,26 @@
+//
+// Model created by Mateus Gabi Moreira <mateusgabimoreira@gmail.com>
+//
+//---------------------------------------------------------------------
+
+* {margin: 0; padding: 0}
+
+@import 'imports';
+@import 'colors';
+@import 'variables';
+@import 'grid';
+@import 'animations';
+
+
+@import 'core';
+@import 'typography';
+@import 'buttons';
+@import 'navbar';
+@import 'menu';
+@import 'modal';
+@import 'forms';
+@import 'table';
+
+
+
+@import 'pages';
