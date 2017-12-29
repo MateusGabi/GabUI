@@ -12,9 +12,26 @@ a {
     background: $link-background;
 }
 
+pre {
+    background: $grey-100;
+    padding: .5em;
+    border-radius: 3px;
+    font-size: 0.8 * $font-size;
+}
+
+pre:before {
+    content: "$";
+    margin-right: 10px;
+}
+
+.list .item {
+    padding: 0 0 10px 0;
+}
+
 .container {
     width: $container-width;
-    margin: 0 auto;
+    margin: $container-margin;
+    padding: $container-padding;
 }
 
 .float-right {

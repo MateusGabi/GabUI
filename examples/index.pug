@@ -5,33 +5,26 @@ extends layout.pug
 block content
 
     div(class='master layout vertical center center-center')
-        h1 Create minimalist layouts and improve your workflow
+        h1.title Create minimalist layouts and improve your workflow
+        .content
+            a(class='button button-default') Get Started
 
     .container
-
-        h3 Introduction
-
-        p I'm glad you came!
-
-        h4 Components
-
-        .layout
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
-            .flex-1 Alerts
+        .grid
+            .grid--1
+                h3 Easy & Fast
+                p GabUI is a flexbox-based framework. Easy to customize and fast to compile and run in-production.
+            .grid--1
+                h3 Light
+                p GabUI CSS has less than 10Kb!
+            .grid--1
+                h3 Install
+                ol.list
+                    li.item
+                        pre git clone https://github.com/MateusGabi/GabUI
+                    li.item
+                        pre npm install
+                    li.item
+                        pre gulp
+                    li.item Access http://localhost:3000
+                    li.item Read our docs

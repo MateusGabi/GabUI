@@ -1,4 +1,12 @@
 .master {
     background: $master-background;
     height: $master-height;
+    
+    .title {
+        color: $master-title-color;
+    }
+
+    .content {
+
+    }
 }
