@@ -4,21 +4,37 @@ html
         title GabUI
         block scripts
             link(href='../../assets/css/index.css', rel='stylesheet')
+            script(src='https://unpkg.com/feather-icons/dist/feather.min.js')
+            script(src='../../assets/js/index.js')
     
     body
         block header
             .navbar
                 .container
-                    .brand GabUI
+                    .brand
+                        span GabUI
+                            sup.tag BETA
                     .menu
-                        a Home
-                        a Documentation
-                        a Examples
-                        a Themes
+                        a(class='button', href='/examples')
+                            i.icon
+                                i(data-feather="home")
+                            span Home
+                        a(class='button', href='https://github.com/MateusGabi/GabUI')
+                            i.icon
+                                i(data-feather="github")
+                            span GitHub
+                        a(class='button', href='https://twitter.com/matgabi17')
+                            i.icon
+                                i(data-feather="twitter")
+                            span Twitter
 
         block wrapper-content
             .container
                 block content
-        block foot
-            .container
-                p Dev by Mateus Gabi with ❤️️
+        block footer
+            .footer
+                .container
+                    p &copy; 2018 Dev by Mateus Gabi with ❤️️
+
+        script
+            include js.js

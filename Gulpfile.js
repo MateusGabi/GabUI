@@ -11,12 +11,19 @@ gulp.task('css', () => {
         .pipe(gulp.dest('./dist/assets/css'))
 })
 
-gulp.task('html', function () {
-    return gulp.src('./examples/**/*.pug')
+gulp.task('html', () => {
+    return gulp
+        .src('./examples/**/*.pug')
         .pipe(pug())
         .pipe(gulp.dest('./dist/examples/'))
 })
 
+gulp.task('js', () => {
+    return gulp
+        .src('./javascript/index.js')
+        .pipe(gulp.dest('./dist/assets/js'))
+})
+
 gulp.task('serve', serve('dist'))
 
-gulp.task('default', ['html', 'css', 'serve'])
+gulp.task('default', ['html', 'css', 'js', 'serve'])
