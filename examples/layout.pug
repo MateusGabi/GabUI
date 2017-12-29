@@ -1,0 +1,24 @@
+//- layout.pug
+html
+    head
+        title My Site - #{title}
+        block scripts
+            link(href='../../assets/css/index.css', rel='stylesheet')
+    
+    body
+        block header
+            .navbar
+                .container
+                    .brand GabUI
+                    .menu
+                        a Home
+                        a Documentation
+                        a Examples
+                        a Themes
+
+        block wrapper-content
+            .container
+                block content
+        block foot
+            .container
+                p Dev by Mateus Gabi with ❤️️
