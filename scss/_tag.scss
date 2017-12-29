@@ -1,0 +1,43 @@
+.tag {
+    font-size: $tag-font-size;
+    margin: $tag-margin;
+    border-radius: $tag-border-radius;
+    text-shadow: $tag-text-shadow;
+}
+
+
+.tag-default {
+    background: $default-color;
+    color: $font-color;
+    padding: $tag-padding;
+}
+
+.tag-primary {
+    background: $primary-color;
+    color: $white;
+    padding: $tag-padding;
+}
+
+.tag-warning {
+    background: $warning-color;
+    color: $white;
+    padding: $tag-padding;
+}
+
+.tag-danger {
+    background: $danger-color;
+    color: $white;
+    padding: $tag-padding;
+}
+
+.tag-success {
+    background: $success-color;
+    color: $white;
+    padding: $tag-padding;
+}
+
+.tag-google {
+    background: $google-color;
+    color: $white;
+    padding: $tag-padding;
+}

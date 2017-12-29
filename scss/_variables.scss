@@ -17,6 +17,18 @@ $font-color: $grey-900;
 $font-size: 16px;
 
 //
+// container
+$container-width: 1200px;
+
+//
+// grid
+$grids: 5;
+$grid-padding: 10px;
+$grid-margin: 5px;
+$grid-background: $grey-300;
+
+
+//
 // core
 $background-page: $white;
 
@@ -27,15 +39,17 @@ $buttons-border-radius: 5px;
 $buttons-padding: 1em;
 
 //
-// container
-$container-width: 1200px;
+// links
+$link-color: $white;
+$link-background: transparent;
 
 //
-// grid
-$grids: 5;
-$grid-padding: 10px;
-$grid-margin: 5px;
-$grid-background: $grey-300;
+// tags
+$tag-font-size: $font-size * 0.75;
+$tag-padding: 5px 10px;
+$tag-margin: 0px 5px;
+$tag-border-radius: 3px;
+$tag-text-shadow: 0px 0px 0px black;
 
 //
 // navbar
@@ -50,3 +64,10 @@ $form-input-background: $grey-100;
 $form-input-border: 0px solid $primary-color;
 $form-input-border-radius: 5px;
 $form-input-padding: 10px 15px;
+
+//
+// footer
+$footer-padding: 30px 0px;
+$footer-margin: 30px 0px;
+$footer-background: $white;
+$footer-border-top: 1px solid $grey-300;
