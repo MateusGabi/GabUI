@@ -3,13 +3,13 @@
     align-items: center;
 
 
-    height: 70px;
+    height: $navbar-height;
 
     color: $navbar-font-color;
 
     background: $navbar-background;
 
-    margin-bottom: 30px;
+    padding-bottom: $navbar-padding-bottom;
 
 
     & > .container {

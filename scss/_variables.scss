@@ -54,9 +54,17 @@ $tag-text-shadow: 0px 0px 0px black;
 //
 // navbar
 $navbar-font-color: $white;
+$navbar-height: 70px;
 $navbar-background: $primary-color;
-
+$navbar-padding-bottom: 30px;
 $brand-font-size: 2 * $font-size;
+
+//
+// master
+$master-background: $primary-color;
+$master-height: calc(100vh - #{$navbar-height} - #{$navbar-padding-bottom});
+
+
 
 //
 // Forms
