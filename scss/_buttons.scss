@@ -1,18 +1,16 @@
 button,
 .button {
 
+    @extend .layout;
+    @extend .horizontal;
+    @extend .center;
+
     border: $buttons-border;
     border-radius: $buttons-border-radius;
     font-family: $font-text;
     padding: $buttons-padding;
-    
-    display: flex;
-    align-items: center;
-    cursor: pointer;
 
-    & > i {
-        padding-right: 1em;
-    }  
+    cursor: pointer;
 
 }
 
