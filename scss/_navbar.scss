@@ -16,9 +16,10 @@
 
     & > .container {
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @extend .layout;
+        @extend .horizontal;
+        @extend .center;
+        @extend .justified;
 
     }
 

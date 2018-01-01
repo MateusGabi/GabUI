@@ -1,5 +1,5 @@
 .menu {
-    display: flex;
-    align-items: center;
-    align-content: center;
+    @extend .layout;
+    @extend .horizontal;
+    @extend .center;  
 }

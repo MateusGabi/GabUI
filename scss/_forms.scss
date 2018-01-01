@@ -21,8 +21,9 @@ form,
     }
 
     .form-group {
-        display: flex;
-        flex-direction: column;
+
+        @extend .layout;
+        @extend .vertical;
 
         & > * {
             margin: 10px 0;
