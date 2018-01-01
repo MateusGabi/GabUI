@@ -1,6 +1,8 @@
 .navbar {
-    display: flex;
-    align-items: center;
+
+    @extend .layout;
+    @extend .horizontal;
+    @extend .center;
 
 
     height: $navbar-height;
