@@ -30,8 +30,16 @@ pre:before {
 
 .container {
     width: $container-width;
-    margin: $container-margin;
-    padding: $container-padding;
+
+    margin-top: $container-margin-top;
+    margin-right: $container-margin-right;
+    margin-bottom: $container-margin-bottom;
+    margin-left: $container-margin-left;
+
+    padding-top: $container-padding-top;
+    padding-right: $container-padding-right;
+    padding-bottom: $container-padding-bottom;
+    padding-left: $container-padding-left;
 }
 
 .float-right {

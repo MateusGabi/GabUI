@@ -19,8 +19,16 @@ $font-size: 16px;
 //
 // container
 $container-width: 80%;
-$container-margin: 0px auto;
-$container-padding: 50px 0;
+
+$container-margin-top: 0px;
+$container-margin-right: auto;
+$container-margin-bottom: 0px;
+$container-margin-left: auto;
+
+$container-padding-top: 0;
+$container-padding-right: 0;
+$container-padding-bottom: 0;
+$container-padding-left: 0;
 
 //
 // grid
