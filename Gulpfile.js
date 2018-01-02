@@ -13,9 +13,9 @@ gulp.task('css', () => {
 
 gulp.task('html', () => {
     return gulp
-        .src('./examples/**/*.pug')
+        .src('./docs/**/*.pug')
         .pipe(pug())
-        .pipe(gulp.dest('./dist/examples/'))
+        .pipe(gulp.dest('./dist/docs/'))
 })
 
 gulp.task('js', () => {
@@ -25,5 +25,5 @@ gulp.task('js', () => {
 })
 
 gulp.task('serve', serve('dist'))
-
-gulp.task('default', ['html', 'css', 'js', 'serve'])
+gulp.task('dist', ['html', 'css', 'js'])
+gulp.task('default', ['dist', 'serve'])
