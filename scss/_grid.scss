@@ -9,7 +9,16 @@
     -webkit-flex: $i;
     flex: $i;
     background: $grid-background;
-    padding: $grid-padding;
-    margin: $grid-margin;
+    text-align: $grid-text-align;
+
+    padding-top: $grid-padding-top;
+    padding-right: $grid-padding-right;
+    padding-bottom: $grid-padding-bottom;
+    padding-left: $grid-padding-left;
+
+    margin-top: $grid-margin-top;
+    margin-right: $grid-margin-right;
+    margin-bottom: $grid-margin-bottom;
+    margin-left: $grid-margin-left;
   }
 }
