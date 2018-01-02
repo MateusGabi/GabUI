@@ -2,41 +2,81 @@
 
 h3 Grid System
 
-.grid
-    .grid--1 .grid--1
-    .grid--1 .grid--1
-    .grid--1 .grid--1
-    .grid--1 .grid--1
-    .grid--1 .grid--1
+h4 Autosizing
 
-.grid        
-    .grid--1 .grid--1
-    .grid--1 .grid--1
-    .grid--1 .grid--1
-    .grid--2 .grid--2
+p Building a grid system is very simple!
 
-.grid
-    .grid--1 .grid--1
-    .grid--1 .grid--1
-    .grid--3 .grid--3
+ol.list
+    li.item Add a grid wrapper
+        pre
+            ='<div class="grid-wrapper"><!-- cells here --></div>'
+    li.item Add as many cell elements as you want
+        pre
+            ='<div class="grid-cell"><!-- content here --></div>'
 
-.grid
-    .grid--1 .grid--1
-    .grid--4 .grid--4
+.grid-wrapper
+    div(class='grid-cell demo-cell') .grid-cell
 
-.grid
-    .grid--1 .grid--1
-    .grid--2 .grid--2
-    .grid--2 .grid--2
+.grid-wrapper
+    div(class='grid-cell demo-cell') .grid-cell
+    div(class='grid-cell demo-cell') .grid-cell
 
-.grid
-    .grid--1 .grid--1
-    .grid--3 .grid--3
-    .grid--1 .grid--1
+.grid-wrapper
+    div(class='grid-cell demo-cell') .grid-cell
+    div(class='grid-cell demo-cell') .grid-cell
+    div(class='grid-cell demo-cell') .grid-cell
 
-.grid
-    .grid--2 .grid--2
-    .grid--3 .grid--3
+.grid-wrapper
+    div(class='grid-cell demo-cell') .grid-cell
+    div(class='grid-cell demo-cell') .grid-cell
+    div(class='grid-cell demo-cell') .grid-cell
+    div(class='grid-cell demo-cell') .grid-cell
+.grid-wrapper
+    div(class='grid-cell demo-cell') .grid-cell
+    div(class='grid-cell demo-cell') .grid-cell
+    div(class='grid-cell demo-cell') .grid-cell
+    div(class='grid-cell demo-cell') .grid-cell
+    div(class='grid-cell demo-cell') .grid-cell
 
-.grid
-    .grid--5 .grid--5
+h4 Cell Sizes
+
+p!= 'You can change the number of grids (default is ' + ' <code>5</code>).'
+
+
+ol.list
+    li.item Add a grid wrapper
+        pre
+            code
+                <div class="grid-wrapper"><!-- cells here --></div>
+    li.item Add a cell element with prefixed-size
+        pre
+            code
+                <div class="grid-cell cell--3of5"><!-- content here --></div>
+    li.item Add as many cell elements as you want
+        pre
+            code 
+                <div class="grid-cell"><!-- content here --></div>
+
+.grid-wrapper
+    div(class='grid-cell cell--2of5 demo-cell') .grid-cell .cell--1of5
+    div(class='grid-cell demo-cell') .grid-cell 
+    div(class='grid-cell demo-cell') .grid-cell 
+    div(class='grid-cell demo-cell') .grid-cell 
+
+.grid-wrapper
+    div(class='grid-cell cell--3of5 demo-cell') .grid-cell .cell--1of5
+    div(class='grid-cell demo-cell') .grid-cell 
+    div(class='grid-cell demo-cell') .grid-cell 
+
+h4 Code
+
+pre
+    code(data-language="html")
+
+        <div class="grid-wrapper">
+        <div class="grid-cell cell--3of5 demo-cell">
+            .grid-cell .cell--1of5
+        </div>
+        <div class="grid-cell demo-cell">.grid-cell </div>
+        <div class="grid-cell demo-cell">.grid-cell </div>
+        </div>
