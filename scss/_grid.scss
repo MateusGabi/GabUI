@@ -1,15 +1,22 @@
 .grid {
   @extend .layout;
   @extend .horizontal;
+  @extend .wrap;
+
+  margin-right: $grid-margin-right * -1;
+  margin-left: $grid-margin-left * -1;
 }
+$grid-padding: $grid-padding-right + $grid-padding-left;
+$grid-margin: $grid-margin-right + $grid-margin-left;
+$offset: 0;
 @for $i from 1 through $grids {
   .grid--#{$i} {
-    -ms-flex: $i;
-    -webkit-flex: $i;
-    flex: $i;
+
+    width: calc(100% * #{$i / $grids} - #{$grid-margin} - #{$grid-padding});
+
     background: $grid-background;
+    border-radius: 5px;
     text-align: $grid-text-align;
-    width: 100% * $i / $grids;
 
     padding-top: $grid-padding-top;
     padding-right: $grid-padding-right;

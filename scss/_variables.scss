@@ -18,7 +18,7 @@ $font-size: 16px;
 
 //
 // container
-$container-width: 80%;
+$container-width: 80vw;
 
 $container-margin-top: 0px;
 $container-margin-right: auto;
@@ -32,7 +32,7 @@ $container-padding-left: 0;
 
 //
 // grid
-$grids: 5;
+$grids: 6;
 $grid-background: $grey-200;
 $grid-text-align: center;
 
@@ -42,9 +42,9 @@ $grid-padding-bottom: 10px;
 $grid-padding-left: 10px;
 
 $grid-margin-top: 5px;
-$grid-margin-right: 5px;
+$grid-margin-right: 10px;
 $grid-margin-bottom: 5px;
-$grid-margin-left: 5px;
+$grid-margin-left: 10px;
 
 
 //

@@ -19,6 +19,11 @@ pre {
     font-size: 0.8 * $font-size;
 }
 
+.textarea,
+textarea {
+    @extend pre;
+}
+
 .list .item {
     padding: 0 0 10px 0;
 }
