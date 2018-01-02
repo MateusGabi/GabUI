@@ -1,47 +1,48 @@
 .grid-wrapper {
-  @extend .layout;
-  @extend .horizontal;
-  @extend .wrap;
-  @extend .justified;
-
-  margin-right: $grid-margin-right * -1;
-  margin-left: $grid-margin-left * -1;
-
-
-  & > .grid-cell {
-
-    flex: 1;
-
-    background: $grid-background;
-    border-radius: 5px;
-    text-align: $grid-text-align;
-
-    padding-top: $grid-padding-top;
-    padding-right: $grid-padding-right;
-    padding-bottom: $grid-padding-bottom;
-    padding-left: $grid-padding-left;
-
-    margin-top: $grid-margin-top;
-    margin-right: $grid-margin-right;
-    margin-bottom: $grid-margin-bottom;
-    margin-left: $grid-margin-left;
-
-  }
+    @extend .layout;
+    @extend .horizontal;
+    @extend .wrap;
+    @extend .justified;
+    margin-right: $grid-margin-right * -1;
+    margin-left: $grid-margin-left * -1;
+    &>.grid-cell {
+        flex: 1;
+        background: $grid-background;
+        border-radius: 5px;
+        text-align: $grid-text-align;
+        padding-top: $grid-padding-top;
+        padding-right: $grid-padding-right;
+        padding-bottom: $grid-padding-bottom;
+        padding-left: $grid-padding-left;
+        margin-top: $grid-margin-top;
+        margin-right: $grid-margin-right;
+        margin-bottom: $grid-margin-bottom;
+        margin-left: $grid-margin-left;
+    }
 }
 
-
-$grid-padding: $grid-padding-right + $grid-padding-left;
-$grid-margin: $grid-margin-right + $grid-margin-left;
+$grid-padding: $grid-padding-right+$grid-padding-left;
+$grid-margin: $grid-margin-right+$grid-margin-left;
 $offset: 0;
 @for $i from 1 through $grids {
-  .grid-cell.cell--#{$i}of#{$grids} {
+    @if $i != $grids {
 
-    $flex-basis: 100% * $i / $grids;
-    
-    // flex: 0 0 $flex-basis;
+        @for $j from 1 through $i {
 
-    flex: none;
-    width: $flex-basis;
+            @if $i != $j {
 
-  }
+                .grid-cell.cell--#{$j}of#{$i} {
+                    $flex-basis: 100% * $j / $i; // flex: 0 0 $flex-basis;
+                    flex: none;
+                    width: $flex-basis;
+                }
+            }
+        }
+
+        .grid-cell.cell--#{$i}of#{$grids} {
+            $flex-basis: 100% * $i / $grids; // flex: 0 0 $flex-basis;
+            flex: none;
+            width: $flex-basis;
+        }
+    }
 }
