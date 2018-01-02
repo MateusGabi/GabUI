@@ -11,7 +11,10 @@
 
     background: $navbar-background;
 
+    padding-top: $navbar-padding-top;
+    padding-right: $navbar-padding-right;
     padding-bottom: $navbar-padding-bottom;
+    padding-left: $navbar-padding-left;
 
 
     & > .container {
@@ -25,13 +28,7 @@
 
     a {
         padding: 1em;
-
-
-        & > i {
-
-            padding-right: 0.5em;
-
-        }
+        color: $navbar-link-color;
     }
 
     h1 {

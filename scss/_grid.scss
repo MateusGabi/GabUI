@@ -2,7 +2,6 @@
   @extend .layout;
   @extend .horizontal;
 }
-
 @for $i from 1 through $grids {
   .grid--#{$i} {
     -ms-flex: $i;
@@ -10,6 +9,7 @@
     flex: $i;
     background: $grid-background;
     text-align: $grid-text-align;
+    width: 100% * $i / $grids;
 
     padding-top: $grid-padding-top;
     padding-right: $grid-padding-right;

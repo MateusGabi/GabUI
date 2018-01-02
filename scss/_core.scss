@@ -19,11 +19,6 @@ pre {
     font-size: 0.8 * $font-size;
 }
 
-pre:before {
-    content: "$";
-    margin-right: 10px;
-}
-
 .list .item {
     padding: 0 0 10px 0;
 }

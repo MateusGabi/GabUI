@@ -12,6 +12,12 @@ button,
 
     cursor: pointer;
 
+    & > i {
+
+        padding-right: 0.5em;
+
+    }
+
 }
 
 .button-default {
