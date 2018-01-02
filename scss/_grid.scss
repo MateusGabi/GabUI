@@ -1,4 +1,4 @@
-.grid {
+.grid-wrapper {
   @extend .layout;
   @extend .horizontal;
   @extend .wrap;
@@ -6,14 +6,11 @@
 
   margin-right: $grid-margin-right * -1;
   margin-left: $grid-margin-left * -1;
-}
-$grid-padding: $grid-padding-right + $grid-padding-left;
-$grid-margin: $grid-margin-right + $grid-margin-left;
-$offset: 0;
-@for $i from 1 through $grids {
-  .grid--#{$i} {
-    
-    flex: 0 0 calc(100% * #{$i / $grids} - #{$grid-margin} - #{$grid-padding});
+
+
+  & > .grid-cell {
+
+    flex: 1;
 
     background: $grid-background;
     border-radius: 5px;
@@ -28,5 +25,23 @@ $offset: 0;
     margin-right: $grid-margin-right;
     margin-bottom: $grid-margin-bottom;
     margin-left: $grid-margin-left;
+
+  }
+}
+
+
+$grid-padding: $grid-padding-right + $grid-padding-left;
+$grid-margin: $grid-margin-right + $grid-margin-left;
+$offset: 0;
+@for $i from 1 through $grids {
+  .grid-cell.cell--#{$i}of#{$grids} {
+
+    $flex-basis: 100% * $i / $grids;
+    
+    // flex: 0 0 $flex-basis;
+
+    flex: none;
+    width: $flex-basis;
+
   }
 }

@@ -28,6 +28,12 @@ textarea {
     padding: 0 0 10px 0;
 }
 
+ol.list {
+    list-style: decimal outside;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
 .container {
     width: $container-width;
 
