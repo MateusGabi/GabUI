@@ -1,7 +1,21 @@
 footer,
 .footer {    
+
+    @extend .layout;
+    @extend .horizontal;
+    @extend .center;
+
     background: $footer-background;
     border-top: $footer-border-top;
-    padding: $footer-padding;
-    margin: $footer-margin;
+    height: $footer-height;
+
+    padding-top: $footer-padding-top;
+    padding-right: $footer-padding-right;
+    padding-bottom: $footer-padding-bottom;
+    padding-left: $footer-padding-left;
+
+    margin-top: $footer-margin-top;
+    margin-right: $footer-margin-right;
+    margin-bottom: $footer-margin-bottom;
+    margin-left: $footer-margin-left;
 }
