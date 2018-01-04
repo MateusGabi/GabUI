@@ -1,6 +1,7 @@
 const fs = require('fs')
 
 const gulp = require('gulp')
+const babel = require('gulp-babel')
 const serve = require('gulp-serve')
 const pug = require('gulp-pug')
 const sass = require('gulp-sass')
@@ -47,6 +48,7 @@ gulp.task('js', () => {
     return gulp
         .src('./javascript/index.js')
         .pipe(cleanDest(DEST_JS))
+        .pipe(babel())
         .pipe(gulp.dest(DEST_JS))
 })
 
