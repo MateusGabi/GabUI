@@ -1,5 +1,6 @@
-# GabUI
-## an minimalist CSS Framework
+# GabUI [![Build Status](https://travis-ci.org/MateusGabi/GabUI.svg?branch=master)](https://travis-ci.org/MateusGabi/GabUI)
+an minimalist CSS Framework
+
 
 ### Install
 

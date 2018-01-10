@@ -1,3 +1,2 @@
-import 'babel-standalone'
-
+import './Info'
 import Modal from './Modal'

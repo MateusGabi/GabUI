@@ -48,8 +48,6 @@ gulp.task('js', () => {
     return gulp
         .src('./javascript/index.js')
         .pipe(cleanDest(DEST_JS))
-        .pipe(babel())
-        .pipe(gulp.dest(DEST_JS))
 })
 
 gulp.task('serve', serve('dist'))
