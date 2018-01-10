@@ -4,7 +4,8 @@
   "description": "a minimalist css framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "gulp dist && webpack"
   },
   "repository": {
     "type": "git",
@@ -35,7 +36,8 @@
     "gulp-serve": "^1.4.0",
     "jquery": "^3.2.1",
     "jstransformer-markdown-it": "^2.0.0",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.0",
+    "webpack": "^3.10.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
