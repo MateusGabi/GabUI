@@ -9,7 +9,7 @@ build:
 deploy:
     provider: pages
     skip-cleanup: true
-    github-token: 36882134e9e8499d8286706a6f9c6f56a7b68f16
+    github-token: 2606d5c9b368f8feb6d855e563964884df121204
     keep-history: true
     on:
         branch: master
