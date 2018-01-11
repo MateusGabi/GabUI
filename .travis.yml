@@ -4,6 +4,15 @@ node_js:
     - "8"
 install:
     - npm install
+build:
+    - npm run build
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: 36882134e9e8499d8286706a6f9c6f56a7b68f16
+    keep-history: true
+    on:
+        branch: master
 cache:
   directories:
     - node_modules
