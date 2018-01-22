@@ -6,11 +6,12 @@ install:
     - npm install
 build:
     - npm run build
+test:
+    - npm test
 deploy:
-    provider: pages
-    skip-cleanup: true
-    github-token: 36882134e9e8499d8286706a6f9c6f56a7b68f16
-    keep-history: true
+    provider: npm
+    email: mateusgabimoreia@gmail.com
+    api_key: acf6b747-4de7-4011-a1a8-7630c834e819
     on:
         branch: master
 cache:
