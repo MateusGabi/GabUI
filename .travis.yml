@@ -9,7 +9,7 @@ build:
 test:
     - npm test
 before_deploy:
-    - npm version patch
+    - npm version patch -a -m "Travis CI deployed"
 deploy:
     provider: npm
     email: mateusgabimoreia@gmail.com
