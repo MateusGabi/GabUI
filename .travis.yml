@@ -1,15 +1,12 @@
 language: node_js
 node_js:
     - "6"
-    - "8"
 install:
     - npm install
 build:
     - npm run build
 test:
     - npm test
-before_deploy:
-    - npm version patch -a -m "Travis CI deployed"
 deploy:
     provider: npm
     email: mateusgabimoreia@gmail.com
