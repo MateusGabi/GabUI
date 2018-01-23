@@ -11,7 +11,7 @@ test:
 deploy:
     provider: npm
     email: mateusgabimoreia@gmail.com
-    api_key: 6e7c96b5-7e60-46be-af13-626f9e49e756
+    api_key: $NPM_TOKEN
     on:
         branch: master
 cache:
