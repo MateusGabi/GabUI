@@ -8,6 +8,7 @@ build:
     - npm run build
 test:
     - npm test
+before_deploy:
     - npm version patch
 deploy:
     provider: npm
