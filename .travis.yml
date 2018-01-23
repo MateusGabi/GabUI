@@ -8,6 +8,8 @@ build:
     - npm run build
 test:
     - npm test
+version:
+    - npm version patch
 deploy:
     provider: npm
     email: mateusgabimoreia@gmail.com
