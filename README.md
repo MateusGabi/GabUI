@@ -1,6 +1,8 @@
-# GabUI [![Build Status](https://travis-ci.org/MateusGabi/GabUI.svg?branch=master)](https://travis-ci.org/MateusGabi/GabUI)
+# GabUI 
 an minimalist CSS Framework
 
+[![Build Status](https://travis-ci.org/MateusGabi/GabUI.svg?branch=master)](https://travis-ci.org/MateusGabi/GabUI)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ### Install
 
