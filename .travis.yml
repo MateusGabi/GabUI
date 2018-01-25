@@ -8,9 +8,7 @@ build:
 test:
     - npm test
 deploy:
-    provider: npm
-    email: mateusgabimoreia@gmail.com
-    api_key: $NPM_TOKEN
+    - npm run release
     on:
         branch: master
 cache:
