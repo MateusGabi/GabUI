@@ -1,21 +1,23 @@
 language: node_js
-node_js:
-    - "6"
-install:
-    - npm install
-build:
-    - npm run build
-test:
-    - npm test
+
+node_js: 8
+
+script:
+  - npm install
+  - npm test
+
 deploy:
-    provider: npm
-    email: mateusgabimoreia@gmail.com
-    api_key: acf6b747-4de7-4011-a1a8-7630c834e819
-    on:
-        branch: master
+  provider: script
+  skip_cleanup: true
+  script:
+    - npm run release
+  on:
+    branch: master
+
 cache:
   directories:
     - node_modules
+
 notifications:
     email:
         recipients:
