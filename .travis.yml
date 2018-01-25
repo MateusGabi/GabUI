@@ -1,20 +1,22 @@
 language: node_js
 node_js:
-  - "8"
-notifications:
-  email:
-    recipients:
-      - mateusgabimoreira@gmail.com
+    - "6"
+install:
+    - npm install
+build:
+    - npm run dist
+test:
+    - npm test
+deploy:
+    provider: npm
+    email: mateusgabimoreia@gmail.com
+    api_key: $NPM_TOKEN
+    on:
+        branch: master
 cache:
   directories:
     - node_modules
-install:
-  - npm install
-script:
-  - npm test
-before_deploy:
-  - npm run dist
-deploy:
-  - npm run release
-  on:
-    branch: master
+notifications:
+    email:
+        recipients:
+            - mateusgabimoreira@gmail.com
