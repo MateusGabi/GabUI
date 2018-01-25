@@ -1,20 +1,20 @@
 language: node_js
 node_js:
-  - "6"
+  - "8"
 notifications:
   email:
     recipients:
       - mateusgabimoreira@gmail.com
-install:
-  - npm install
-build:
-  - npm run build
-test:
-  - npm test
-after_success:
-  - npm run semantic-release
-  on:
-    branch: master
 cache:
   directories:
     - node_modules
+install:
+  - npm install
+script:
+  - npm test
+before_deploy:
+  - npm run dist
+deploy:
+  - npm run release
+  on:
+    branch: master
