@@ -10,7 +10,6 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - npm run dist
     - npm run release
   on:
     branch: master
