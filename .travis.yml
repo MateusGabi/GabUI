@@ -8,7 +8,7 @@ build:
 test:
     - npm test
 deploy:
-    -provider: script
+    - provider: script
     script: npm run release
     on:
         branch: master
