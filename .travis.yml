@@ -8,7 +8,8 @@ build:
 test:
     - npm test
 deploy:
-    - npm run release
+    -provider: script
+    script: npm run release
     on:
         branch: master
 cache:
