@@ -1,20 +1,24 @@
 language: node_js
-node_js:
-    - "6"
-install:
-    - npm install
-build:
-    - npm run dist
-test:
-    - npm test
+
+node_js: 8
+
+script:
+  - npm install
+  - npm test
+
 deploy:
-    - provider: script
-    script: npm run release
-    on:
-        branch: master
+  provider: script
+  skip_cleanup: true
+  script:
+    - npm run dist
+    - npm run release
+  on:
+    branch: master
+
 cache:
   directories:
     - node_modules
+
 notifications:
     email:
         recipients:
