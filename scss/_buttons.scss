@@ -10,6 +10,8 @@ button,
     font-family: $font-text;
     padding: $buttons-padding;
 
+    width: fit-content;
+
     cursor: pointer;
 
     & > i {
