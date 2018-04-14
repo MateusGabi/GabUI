@@ -31,18 +31,18 @@
 		"cz-conventional-changelog": "^2.1.0",
 		"gulp-clean-dest": "^0.2.0",
 		"gulp-concat": "^2.6.1",
-		"gulp-csso": "^3.0.0",
-		"gulp-header": "^1.8.9",
+		"gulp-csso": "^3.0.1",
+		"gulp-header": "^1.8.12",
 		"gulp-header-license": "^1.0.9",
 		"gulp-licenser": "^1.0.2",
 		"gulp-pug": "^3.3.0",
-		"gulp-sass": "^3.1.0",
+		"gulp-sass": "^3.2.1",
 		"gulp-serve": "^1.4.0",
-		"jquery": "^3.2.1",
+		"jquery": "^3.3.1",
 		"jstransformer-markdown-it": "^2.0.0",
-		"run-sequence": "^2.2.0",
-		"semantic-release": "^12.2.4",
-		"webpack": "^3.10.0"
+		"run-sequence": "^2.2.1",
+		"semantic-release": "^12.4.1",
+		"webpack": "^3.11.0"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
@@ -52,7 +52,7 @@
 		"babelify": "^8.0.0",
 		"browserify": "^14.5.0",
 		"gulp": "^3.9.1",
-		"gulp-babel": "^7.0.0",
+		"gulp-babel": "^7.0.1",
 		"vinyl-source-stream": "^2.0.0"
 	},
 	"config": {
