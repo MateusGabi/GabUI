@@ -1,4 +1,6 @@
 # GabUI 
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/MateusGabi/GabUI.svg)](https://greenkeeper.io/)
 an minimalist CSS Framework
 
 [![Build Status](https://travis-ci.org/MateusGabi/GabUI.svg?branch=master)](https://travis-ci.org/MateusGabi/GabUI)
