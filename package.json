@@ -42,7 +42,7 @@
 		"jstransformer-markdown-it": "^2.0.0",
 		"run-sequence": "^2.2.1",
 		"semantic-release": "^15.1.7",
-		"webpack": "^4.7.0"
+		"webpack": "^4.41.1"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
