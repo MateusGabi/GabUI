@@ -28,7 +28,7 @@
 		"babel-runtime": "^6.26.0",
 		"babel-standalone": "^6.26.0",
 		"commitizen": "^3.0.0",
-		"cz-conventional-changelog": "^2.1.0",
+		"cz-conventional-changelog": "^3.1.1",
 		"gulp-clean-dest": "^0.2.0",
 		"gulp-concat": "^2.6.1",
 		"gulp-csso": "^3.0.1",
