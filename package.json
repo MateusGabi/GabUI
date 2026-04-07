@@ -55,6 +55,9 @@
 		"gulp-babel": "^8.0.0",
 		"vinyl-source-stream": "^2.0.0"
 	},
+	"engines": {
+		"node": ">=10"
+	},
 	"config": {
 		"commitizen": {
 			"path": "node_modules/cz-conventional-changelog"
